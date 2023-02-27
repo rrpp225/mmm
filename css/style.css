@@ -87,6 +87,7 @@ img {
 .w_inner{
     max-width: 1100px;
     margin: 0 auto;
+    height: calc(100vh - 70px);
 }
 
 /* ヘッダー */
@@ -217,7 +218,7 @@ img {
 }
 
 
-/*  メッセージ　*/
+/*  メッセージ  */
 
 .header_img .ft{
     display: flex;
@@ -268,11 +269,11 @@ img {
 .service{
     max-width: 30%;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .service img{
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 
 .service .ttl_en{
@@ -311,7 +312,7 @@ img {
     font-style: normal;
 }
 
-.container_works p{
+.container_works h2{
     margin-bottom: 40px;
 }
 
@@ -334,10 +335,11 @@ img {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 100px;
+    align-items: center;
 }
 
 .works_more img{
-    width: 10%;
+    width: 50px;
 }
 
 /* profile */
@@ -467,46 +469,17 @@ textarea{
     font-size: 15px;
 }
 
-/* コンタクトボタン */
+/* インプットボタン */
 
-a.topcontact_btn {
-	display: flex;
-	vertical-align: middle;
-	text-decoration: none;
-	margin: auto;
-	width: 20em;
-	height: 4em;
-	color: #ccc;
-	cursor: pointer;
-	transition: all 0.85s cubic-bezier(.17,.67,.14,.93);
-	transform-style: preserve-3d;
-	transform-origin: 100% 50%;
-    margin-bottom: 50px;
+.input_btn{
+    margin-top: 30px;
+    background-color: #fff;
+    border: solid 1px #aaa;
+    border-radius: 20px;
+    width: 100px;
+    font-size: 15px;
+    line-height: 2;
 }
-a.topcontact_btn:hover {
-	transform: rotateX(-90deg);
-}
-a.topcontact_btn .side {
-	box-sizing: border-box;
-	position: absolute;
-	display: inline-block;
-	width: 20em;
-	text-align: center;
-	padding: 1.2rem 4rem;
-	font-weight: bold;
-	letter-spacing: 2px;
-}
-a.topcontact_btn .top {
-	background: #b4e12b;
-	color: #fff;
-	transform: rotateX(90deg) translate3d(0, 0, 2em);
-}
-a.topcontact_btn .front {
-	background: #27acd9;
-	color: #fff;
-	transform: translate3d(0, 0, 2em);
-}
-
 
 /* フッター */
 .footer{
@@ -534,6 +507,8 @@ a.topcontact_btn .front {
     margin-top: 40px;
 }
 
+/* カテゴリーリスト */
+
 .category_list{
     padding: 0.7571428571rem;
     background-color:  rgba(223, 216, 216, 0.4);
@@ -550,7 +525,7 @@ a.topcontact_btn .front {
     font-weight:400;
     font-style:normal;
     font-size: 21px;
-    line-height: 1;
+    line-height: 200%
 }
 
 .container_ttl_page h1{
@@ -564,6 +539,13 @@ a.topcontact_btn .front {
 .container_ttl_page p{
     margin-bottom: 100px;
 }
+
+.current{
+    background-color: #fff;
+    border-radius: 2.5rem;
+}
+
+/* works アーカイブ */
 
 .p-works_archive{
     display: flex;

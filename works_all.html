@@ -39,49 +39,49 @@
     </div>
 
     <section class="p-works_archive">
-            <div class="item_graphic">
+            <div class="item_graphic allitem">
                 <a href="">
                     <img src="image/p2/worksall_01@3x-100.jpg" alt="デラックスバーガー高級ver">
                     <p class="client">DELUXE BURGER</p>
                     <p class="category">Banner</p>
                 </a>
             </div>
-            <div class="item_graphic">
+            <div class="item_graphic allitem">
             <a href="">
                 <img src="image/p2/worksall_02@3x-100.jpg" alt="デラックスバーガーPOPver">
                 <p class="client">DELUXE BURGER</p>
                 <p class="category">Banner</p>
             </a>
         </div>
-        <div class="item_graphic">
+        <div class="item_graphic allitem">
             <a href="">
                 <img src="image/p2/worksall_03@3x-100.jpg" alt="デザスタモバイル">
                 <p class="client">デザスタ mobile 様</p>
                 <p class="category">Banner</p>
             </a>
         </div>
-        <div class="item_graphic">
+        <div class="item_graphic allitem">
             <a href="">
                 <img src="image/p2/worksall_04@3x-100.jpg" alt="トラベルメディア">
                 <p class="client">トラベルメディア 様</p>
                 <p class="category">Banner</p>
             </a>
         </div>
-        <div class="item_web">
+        <div class="item_web allitem">
             <a href="">
                 <img src="image/p2/worksall_05@3x.png" alt="WORKERS">
                 <p class="client">WORKERS 様</p>
                 <p class="category">Web</p>
             </a>
         </div>
-        <div class="item_web">
+        <div class="item_web allitem">
             <a href="">
                 <img src="image/p2/worksall_06@3x-100.jpg" alt="LIFE hair design">
                 <p class="client">LIFE hair design 様</p>
                 <p class="category">Web</p>
             </a>
         </div>
-        <div class="item_web">
+        <div class="item_web allitem">
             <a href="">
                 <img src="image/p2/worksall_07@3x.png" alt="DESIGN CAFE">
                 <p class="client">DESIGN CAFE 様</p>
@@ -100,23 +100,27 @@
 
 <script>
     $(function (){
-        $('.c-btn_category_web').on('click',function(){
-            $('.p-works_archive').hide();
+        // webをクリックしたら
+        $('.c-btn_category_web').on('click',function (){
+            $('.category_list p').removeClass('current');
+            $('.c-btn_category_web').addClass('current');
+            $('.allitem').hide();
             $('.item_web').show();
-        })
-    });
+        });
 
-    $(function (){
+        // graphicをクリックしたら
         $('.c-btn_category_graphic').on('click',function(){
-            $('.p-works_archive').hide();
+            $('.category_list p').removeClass('current');
+            $('.c-btn_category_graphic').addClass('current');
+            $('.allitem').hide();
             $('.item_graphic').show();
         })
-    });
 
-    $(function (){
+        // allをクリックしたら
         $('.c-btn_category_all').on('click',function(){
-            $('.p-works_archive').hide();
-            $('.item_web,.item_graphic').show();
+            $('.category_list p').removeClass('current');
+            $('.c-btn_category_all').addClass('current');
+            $('.allitem').show();
         })
     });
 
