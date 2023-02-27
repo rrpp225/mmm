@@ -82,48 +82,64 @@
         <p>- 制作実績 -</p>
         <div class="works_block_slider">
             <div class="works">
+                <a href="">
                 <img src="image/p1/1_works_01@3x.png" alt="work1">
                 <div class="ttl">WORKERS 様</div>
                 <p class="explain">web</p>
+                </a>
             </div>
             <div class="works">
+                <a href="">
                 <img src="image/p1/1_works_02@3x-100.jpg" alt="work1">
                 <div class="ttl">LIFE hair design 様</div>
                 <p class="explain">web</p>
+                </a>
             </div>
             <div class="works">
+                <a href="">
                 <img src="image/p1/1_works_03@3x-100.jpg" alt="work1">
                 <div class="ttl">トラベルメディア 様</div>
                 <p class="explain">Bannar</p>
+                </a>
             </div>
             <div class="works">
+                <a href="">
                 <img src="image/p1/1_works_04@3x-100.jpg" alt="work1">
                 <div class="ttl">DELUXE BURGER</div>
                 <p class="explain">Bannar</p>
+                </a>
             </div>
             <div class="works">
+                <a href="">
                 <img src="image/p1/1_works_05@3x-100.jpg" alt="work1">
                 <div class="ttl">DELUXE BURGER</div>
                 <p class="explain">Bannar</p>
+                </a>
             </div>
             <div class="works">
+                <a href="">
                 <img src="image/p1/1_works_06@3x-100.jpg" alt="work1">
                 <div class="ttl">デザスタ mobile 様</div>
                 <p class="explain">Bannar</p>
+                </a>
             </div>
             <div class="works">
+                <a href="">
                 <img src="image/p1/1_works_07@3x.png" alt="work1">
                 <div class="ttl">DESIGN CAFE 様</div>
                 <p class="explain">web</p>
+                </a>
             </div>
             <div class="works">
+                <a href="">
                 <img src="image/p1/1_works_07@3x.png" alt="work1">
                 <div class="ttl">ポートフォリオサイト</div>
                 <p class="explain">web</p>
+                </a>
             </div>
         </div>
         <div class="works_more">
-            <a href=""><p>もっと見てみる</p>
+            <a href=""><p>view more</p>
             <img src="image/p1/アセット 38@3x.png" alt="矢印"></a>
         </div>
     </section>
@@ -155,14 +171,34 @@
             <p>当ポートフォリオサイトにご訪問いただき、誠にありがとうございます。<br>
                 制作のご依頼やご質問など、まずは気軽にご相談ください。<br>
                 3営業日以内にご連絡をさせていただきます。</p>
-            <div class="contact_form">
-
-            </div>
-            <div class="contact_btn">
-
-            </div>
         </div>
-
+            <div class="contact_form">
+                <form action="confirm.php" method="post">
+                    <div class="item">
+                        <label class="label" for="name">お名前</label>
+                        <input id="your-name" type="text" name="entry.1409889362" placeholder="しょうたろう">
+                    </div>
+                        
+                    <div class="item">
+                        <label class="label" for="email">フリガナ</label>
+                        <input id="email" type="email" name="entry.887277692" placeholder="ショウタロウ">
+                    </div>
+                        
+                    <div class="item">
+                        <label class="label" for="tel">メールアドレス</label>
+                        <input id="your-email" type="text" name="entry.1279063880" placeholder="sample@gmail.com">
+                    </div>
+                        
+                    <div class="item">
+                        <label class="label" for="textarea-item">お問い合わせ内容</label>
+                        <textarea id="textarea-item" class="materialize-textarea" name="entry.425907853"></textarea>
+                    </div>        
+                </form>
+                <a href="" class="topcontact_btn">
+                    <span class="side top">Thanks</span>
+                    <span class="side front">送信</span>
+                </a>
+            </div>
     </section>
 
     <div class="footer">
@@ -181,7 +217,7 @@
         $('.works_block_slider').slick({
             arrows: false,
             autoplay: true,
-            slidesToShow: 5,
+            slidesToShow: 4,
             slidesToScroll: 1,
 
             responsive: [{

@@ -45,6 +45,20 @@ dd {
     background-color: #ab526f;
 }
 
+.works04-page{
+    background-color: #4d4545;
+}
+
+.works05-page{
+    background-color: #ab526f;
+}
+
+.works06-page{
+    background-color: #bb7302;
+
+}
+
+
 a {
     /*下線を消す*/
     text-decoration: none;
@@ -222,47 +236,40 @@ img {
     margin-bottom: 60px;
 }
 
-.container_service .service_wrap{
+.service_wrap{
     display: flex;
     justify-content: space-between;
     max-width: 1100px;
     margin: 0 auto;
 }
 
-.container_service .service{
+.service{
     max-width: 30%;
     text-align: center;
+    margin-bottom: 40px;
+}
+
+.service img{
+    margin-bottom: 40px;
 }
 
 .service .ttl_en{
-    margin-top: 30px;
     font-family: "montserrat", sans-serif;
     font-weight: 400;
     font-style: normal;
-}
+    font-size: 24px;
+    margin-bottom: 20px;
+    }
+
+.service .ttl_jp{
+    font-size: 15px;
+    margin-bottom: 20px;
+    }
 
 .service .explain{
     max-width: 60%;
     text-align: center;
     margin: 0 auto;
-}
-
-.container_service .service image{
-    margin-bottom: 20px;
-}
-
-.container_service .service .ttl_en{
-    font-size: 24px;
-    margin-bottom: 20px;
-
-}
-
-.container_service .service .ttl_jp{
-    font-size: 12px;
-    margin-bottom: 30px;
-}
-
-.container_service .service .explain{
     font-size: 15px;
 }
 
@@ -286,18 +293,14 @@ img {
     margin-bottom: 40px;
 }
 
-.works_block{
-    display: flex;
-    justify-content: space-between;
-}
-
-.works_block .works img{
-    width: 30%;
+/* スライダー調整 */
+.container_works .works{
+    margin-right: 30px;
 }
 
 .container_works .works .ttl{
     font-size: 20px;
-    margin-bottom: 15px;
+    margin: 25px 0;
 }
 
 .container_works .works .explain{
@@ -305,15 +308,14 @@ img {
     margin-bottom: 70px;
 }
 
-
-.works_more{
+.works_more a{
     display: flex;
-    justify-content: center;
-    margin: 40px;
+    justify-content: flex-end;
+    margin-bottom: 100px;
 }
 
 .works_more img{
-    width: 30%;
+    width: 10%;
 }
 
 /* profile */
@@ -323,6 +325,7 @@ img {
     margin-left: calc((100% - 1100px) / 2);
     justify-content: space-between;
     width: 1100px;
+    margin-bottom: 100px;
 }
 
 .container_profile h1{
@@ -338,7 +341,6 @@ img {
     margin-bottom: 40px;
     display: flex;
 }
-
 
 .profile_explain h2{
     font-size: 25px;
@@ -388,8 +390,101 @@ img {
 .contact_explain p{
     font-size: 16px;
     line-height: 30px;
-
 }
+
+/* contact form */
+
+form{
+    max-width: 680px;
+    width: calc(100% - 10px);
+    margin: 0 auto;
+    font-size: 15px;
+    margin-bottom: 100px;
+}
+    
+.item{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.label{
+    width: 180px;
+    padding-left: 10px;
+}
+    
+.label-required{
+    color: #fff; 
+    font-size: 15px;
+}
+    
+input[type="text"],input[type="email"]{
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+    
+select{
+    appearance: none;
+    cursor: pointer;
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+    
+textarea{
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    padding: 10px;
+    height: 160px;
+    width: 480px;
+    font-size: 15px;
+}
+
+/* コンタクトボタン */
+
+a.topcontact_btn {
+	display: flex;
+	vertical-align: middle;
+	text-decoration: none;
+	margin: auto;
+	width: 20em;
+	height: 4em;
+	color: #ccc;
+	cursor: pointer;
+	transition: all 0.85s cubic-bezier(.17,.67,.14,.93);
+	transform-style: preserve-3d;
+	transform-origin: 100% 50%;
+    margin-bottom: 50px;
+}
+a.topcontact_btn:hover {
+	transform: rotateX(-90deg);
+}
+a.topcontact_btn .side {
+	box-sizing: border-box;
+	position: absolute;
+	display: inline-block;
+	width: 20em;
+	text-align: center;
+	padding: 1.2rem 4rem;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+a.topcontact_btn .top {
+	background: #b4e12b;
+	color: #fff;
+	transform: rotateX(90deg) translate3d(0, 0, 2em);
+}
+a.topcontact_btn .front {
+	background: #27acd9;
+	color: #fff;
+	transform: translate3d(0, 0, 2em);
+}
+
 
 /* フッター */
 .footer{
@@ -398,7 +493,7 @@ img {
 
 .footer img{
     width: 80px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .copy{
@@ -692,6 +787,7 @@ img {
     font-weight:700;
     font-style:normal;
     font-size: 20px;
+    margin-bottom: 150px;
 }
 
 a.btn_12::before {
@@ -711,17 +807,14 @@ a.btn_12:hover {
 .contact_wrap{
     text-align: center;
     margin-top: 90px;
-}
-
-.contact_wrap .box{
     background-color: #fff;
     width: 1100px;
     height: 400px;
     margin: 0 auto;
 }
 
-
 .contact_wrap h1{
+    transform: translateY(-50%);
     font-size: 62px;
     line-height: 1.7;
     font-family:"montserrat",sans-serif;
@@ -730,9 +823,10 @@ a.btn_12:hover {
 }
 
 .contact_wrap h2{
+    transform: translateY(-200%);
     font-size: 15px;
     line-height: 1.2;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
 }
 
 .contact_wrap p{
@@ -744,7 +838,6 @@ a.btn_12:hover {
 a.btn_contact {
 	display: block;
 	text-align: center;
-	vertical-align: middle;
 	text-decoration: none;
 	width: 120px;
 	margin: auto;
@@ -760,6 +853,7 @@ a.btn_contact {
     font-weight: 400;
     font-style: normal;
 }
+
 a.btn_contact::before {
 	content: "";
 	position: absolute;
@@ -772,9 +866,11 @@ a.btn_contact::before {
 	transition: all .3s;
 	z-index: -1;
 }
+
 a.btn_contact:hover::before {
 	transform: translateX(0);
 }
+
 a.btn_contact:hover {
 	color: #fff;
 }
@@ -786,4 +882,118 @@ a.btn_contact:hover {
     font-family:"montserrat",sans-serif;
     font-weight:100;
     font-style:normal;
+}
+
+/* p4 works03 LIFE hair design */
+
+.capcure01_secondary{
+    margin: 0 auto;
+}
+
+.outline_img_secondary{
+    margin-bottom: 80px;
+}
+
+.design_img_secondary{
+    margin-bottom: 80px;
+}
+
+/* p5 works04 deluxe burger */
+
+.content_img .capcure01_04{
+    width: 35%;
+}
+
+.content_img .capcure02_04{
+    width: 55%;
+}
+
+.design_text_other{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 80px 150px;
+}
+
+.design_text_other h2{
+    font-size: 25px;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.design_text_other p{
+    font-size: 20px;
+    line-height: 2.4;
+    color: #fff;
+}
+
+.design_img_other2 img{
+    margin: 0 auto;
+    width: 1100px;
+    margin-bottom: 50px;
+}
+
+/* p6 works06 トラベルメディア */
+
+.capcure01_06{
+    width: 76%;
+    margin: 0 auto;
+}
+
+.outline{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 108px;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.outline img{
+    width: 50%;
+    margin-top: 40px;
+}
+
+.outline_text_other h2{
+    font-size: 25px;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.outline_text_other p{
+    font-size: 20px;
+    line-height: 2.4;
+    color: #fff;
+}
+
+.design_wrap{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 108px;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.design_text_wrapper h2{
+    font-size: 25px;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.design_text_wrapper p{
+    font-size: 20px;
+    line-height: 2.4;
+    color: #fff;
+}
+
+.design_img_other {
+    width: 50%;
+    margin-top: 40px;
 }
