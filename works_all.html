@@ -7,6 +7,7 @@
     <title>miura portfolio</title>
     <link rel="stylesheet" href="https://use.typekit.net/yuf4dcq.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 <body class="works_allpage">
     <!-- header -->
@@ -27,9 +28,9 @@
     <!-- <category> -->
     <div class="container_category_list">
         <div class="category_list">
-            <a href="" class="c-btn_category_all">ALL</a>
-            <a href="" class="c-btn_category_web">Web</a>
-            <a href="" class="c-btn_category_graphic">Graphic</a>
+            <p class="c-btn_category_all">ALL</p>
+            <p class="c-btn_category_web">Web</p>
+            <p class="c-btn_category_graphic">Graphic</p>
         </div>
         <div class="container_ttl_page">
             <h1>Works</h1>
@@ -38,32 +39,32 @@
     </div>
 
     <section class="p-works_archive">
-            <div class="item_bannar">
+            <div class="item_graphic">
                 <a href="">
                     <img src="image/p2/worksall_01@3x-100.jpg" alt="デラックスバーガー高級ver">
                     <p class="client">DELUXE BURGER</p>
-                    <p class="category">Bannar</p>
+                    <p class="category">Banner</p>
                 </a>
             </div>
-            <div class="item_bannar">
+            <div class="item_graphic">
             <a href="">
                 <img src="image/p2/worksall_02@3x-100.jpg" alt="デラックスバーガーPOPver">
                 <p class="client">DELUXE BURGER</p>
-                <p class="category">Bannar</p>
+                <p class="category">Banner</p>
             </a>
         </div>
-        <div class="item_bannar">
+        <div class="item_graphic">
             <a href="">
                 <img src="image/p2/worksall_03@3x-100.jpg" alt="デザスタモバイル">
                 <p class="client">デザスタ mobile 様</p>
-                <p class="category">Bannar</p>
+                <p class="category">Banner</p>
             </a>
         </div>
-        <div class="item_bannar">
+        <div class="item_graphic">
             <a href="">
                 <img src="image/p2/worksall_04@3x-100.jpg" alt="トラベルメディア">
                 <p class="client">トラベルメディア 様</p>
-                <p class="category">Bannar</p>
+                <p class="category">Banner</p>
             </a>
         </div>
         <div class="item_web">
@@ -96,5 +97,30 @@
         </div>
     </div>
 </div>
+
+<script>
+    $(function (){
+        $('.c-btn_category_web').on('click',function(){
+            $('.p-works_archive').hide();
+            $('.item_web').show();
+        })
+    });
+
+    $(function (){
+        $('.c-btn_category_graphic').on('click',function(){
+            $('.p-works_archive').hide();
+            $('.item_graphic').show();
+        })
+    });
+
+    $(function (){
+        $('.c-btn_category_all').on('click',function(){
+            $('.p-works_archive').hide();
+            $('.item_web,.item_graphic').show();
+        })
+    });
+
+</script>
+
 </body>
 </html>

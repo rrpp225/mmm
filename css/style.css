@@ -145,7 +145,25 @@ img {
 
 .header_img .bc .img_1{
     position: absolute;
-    bottom: 100px;
+    /* bottom: 100px; */
+    top: 50px;
+    animation: fuwafuwa 3s infinite ease-in-out .8s alternate;
+    display: inline-block;
+    transition: 1.5s ease-in-out;
+    height: 70px;
+    margin-top: 15px;
+}
+
+@keyframes fuwafuwa {
+    0% {
+    transform:translate(0, 0) rotate(-7deg);
+}
+    50% {
+    transform:translate(0, -7px) rotate(0deg);
+}
+    100% {
+    transform:translate(0, 0) rotate(7deg);
+}
 }
 
 .header_img .bc .img_2{
@@ -167,13 +185,14 @@ img {
 
 .header_img .bc .img_5{
     position: absolute;
-    bottom: 100px;
+    /* bottom: 100px; */
     right: 30px;
 }
 
 .header_img .bc .img_6{
     position: absolute;
-    bottom: 150px;
+    /* bottom: 150px; */
+    top: 150px;
     left: 400px;
 }
 
@@ -184,18 +203,21 @@ img {
 
 .header_img .bc .img_8{
     position: absolute;
-    bottom: 60px;
+    /* bottom: 60px; */
     right: 30px;
+    top: 120px;
 }
 
 .header_img .bc .img_9{
     position: absolute;
-    right: 10px;
-    bottom: 200px;
+    /* right: 10px;
+    bottom: 200px; */
+    left: 150px;
+    top: 200px;
 }
 
 
-/* コンセプト */
+/*  メッセージ　*/
 
 .header_img .ft{
     display: flex;
@@ -508,12 +530,27 @@ a.topcontact_btn .front {
 
 
 /* p2 works全体ページ */
+.container_category_list{
+    margin-top: 40px;
+}
 
-.container_category_list .category_list{
-    margin-top: 150px;
-    background-color:  #8886;
+.category_list{
+    padding: 0.7571428571rem;
+    background-color:  rgba(223, 216, 216, 0.4);
     border-radius: 2.5rem;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.category_list p{
+    font-family:"montserrat",sans-serif;
+    font-weight:400;
+    font-style:normal;
+    font-size: 21px;
+    line-height: 1;
 }
 
 .container_ttl_page h1{
