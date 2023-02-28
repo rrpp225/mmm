@@ -33,7 +33,7 @@
     <div class="header_img">
         <div class="header_img bc">
             <div class="bc_wrap">
-                <div class="img_1"><img src="image/p1/maru_01.png" alt="白丸1"></div>
+                <div class="img_1"><img src="image/p1/maru_03.png" alt="白丸1"></div>
                 <div class="img_2"><img src="image/p1/maru_02.png" alt="白丸2"></div>
                 <div class="img_3"><img src="image/p1/maru_03.png" alt="白丸3"></div>
                 <div class="img_4"><img src="image/p1/maru_01.png" alt="白丸4"></div>
@@ -42,12 +42,13 @@
                 <div class="img_7"><img src="image/p1/maru_02.png" alt="白丸7"></div>
                 <div class="img_8"><img src="image/p1/maru_02.png" alt="白丸8"></div>
                 <div class="img_9"><img src="image/p1/maru_01.png" alt="白丸9"></div>
+                <div class="img_10"><img src="image/p1/maru_03.png" alt="白丸10"></div>
+                <div class="img_11"><img src="image/p1/maru_02.png" alt="白丸11"></div>
             </div>
         </div>
         <div class="header_img ft w_inner">
             <div class="img_1"><img src="image/p1/top_01.svg" alt="メッセージ"></div>
             <div class="img_2"><img src="image/p1/top_02.svg" alt="ていねいに、つくる。"></div>
-            <div class="img_3"><img src="image/p1/scroll.svg" alt="スクロール"></div>
         </div>
     </div>
 
@@ -194,13 +195,9 @@
                         <label class="label" for="textarea-item">お問い合わせ内容</label>
                         <textarea id="textarea-item" class="materialize-textarea" name="entry.425907853"></textarea>
                     </div>  
-                    <div class="input_btn>
-                    <input type="submit" value="送 信">
-                        <span class="side top">Thanks</span>
-    	                <span class="side front">Button</span>
-                    </div>
+                    
+                    <input type="submit" value="送 信" class="input_btn">
                 </form>
-                
             </div>
     </section>
 
@@ -232,14 +229,27 @@
             ],
         });
     
-        var contact = $('.container_contact').offset().top - 100;
+        
+        var contact = $('#container_contact').offset().top - 150;
             $(window).on("scroll", function () {
                 if ($(this).scrollTop() > contact) {
+                    // 白丸1上に上がる
                     $('.img_1').addClass('active');
                 } else {
                     $('.img_1').removeClass('active');
                 }
             });
+
+            var contact = $('#container_contact').offset().top - 150;
+            $(window).on("scroll", function () {
+                if ($(this).scrollTop() > contact) {
+                    // 白丸2上に上がる
+                    $('.img_2').addClass('active_2');
+                } else {
+                    $('.img_2').removeClass('active_2');
+                }
+            });
+
         });
     </script>
     

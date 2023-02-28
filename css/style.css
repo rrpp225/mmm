@@ -26,12 +26,41 @@ dd {
 }
 
 .top-page{
-    background-color: #158bba;
-}
+    background: linear-gradient(90deg,#115588,#158bba,#bfe9f7);
+    background-size: 180% 180%;
+    animation: gradient-animation 10s ease infinite;
+    }
+    
+    @keyframes gradient-animation {
+        0% {
+        background-position: 0% 50%;
+        }
+        50% {
+        background-position: 100% 50%;
+        }
+        100% {
+        background-position: 0% 50%;
+        }
+    }
+
 
 .works_allpage{
-    background-color: #158bba;
-}
+    background: linear-gradient(90deg,#115588,#158bba,#bfe9f7);
+    background-size: 180% 180%;
+    animation: gradient-animation 10s ease infinite;
+    }
+    
+    @keyframes gradient-animation {
+        0% {
+        background-position: 0% 50%;
+        }
+        50% {
+        background-position: 100% 50%;
+        }
+        100% {
+        background-position: 0% 50%;
+        }
+    }
 
 .works01-page{
     background-color: #4d4545;
@@ -146,34 +175,12 @@ img {
 
 .header_img .bc .img_1{
     position: absolute;
-    top: 50px;
+    top: -40px;
     animation: fuwafuwa 3s infinite ease-in-out .8s alternate;
     display: inline-block;
-    transition: 1.5s ease-in-out;
+    transition: 2s ease-in-out;
     height: 70px;
     margin-top: 15px;
-}
-
-@keyframes fuwafuwa {
-    0% {
-    transform:translate(0, 0) rotate(-7deg);
-}
-    50% {
-    transform:translate(0, -7px) rotate(0deg);
-}
-    100% {
-    transform:translate(0, 0) rotate(7deg);
-}
-}
-
-.header_img .bc .active{
-    top: -500px;
-}
-
-.header_img .bc .img_2{
-    position: absolute;
-    top: -60px;
-    animation: fuwafuwa 2s infinite;
 }
 
 @keyframes fuwafuwa {
@@ -186,6 +193,31 @@ img {
     100% {
     transform: translateY(0px);
     }
+}
+
+.header_img .bc .active{
+    top: -500px;
+}
+
+.header_img .bc .img_2{
+    position: absolute;
+    animation: fuwafuwa 4s infinite;
+}
+
+@keyframes fuwafuwa {
+    0% {
+    transform: translateY(0px);
+    }
+    50% {
+    transform: translateY(-30px);
+    }
+    100% {
+    transform: translateY(0px);
+    }
+}
+
+.header_img .bc .active_2{
+    top: -500px;
 }
 
 .header_img .bc .img_3{
@@ -248,8 +280,6 @@ img {
 
 .header_img .bc .img_6{
     position: absolute;
-    top: 150px;
-    left: 400px;
     animation: fuwafuwa 2s infinite;
 }
 
@@ -287,9 +317,9 @@ img {
 
 .header_img .bc .img_8{
     position: absolute;
-    right: 30px;
-    top: 120px;
-    animation: fuwafuwa 3s infinite;
+    right: 60px;
+    top: 130px;
+    animation: fuwafuwa 5s infinite;
 }
 
 @keyframes fuwafuwa {
@@ -307,8 +337,8 @@ img {
 .header_img .bc .img_9{
     position: absolute;
     left: 150px;
-    top: 200px;
-    animation: fuwafuwa 3s infinite;
+    top: 250px;
+    animation: fuwafuwa 5s infinite;
 }
 
 @keyframes fuwafuwa {
@@ -323,6 +353,43 @@ img {
     }
 }
 
+.header_img .bc .img_10{
+    position: absolute;
+    left: 220px;
+    top: 150px;
+    animation: fuwafuwa 5s infinite;
+}
+
+@keyframes fuwafuwa {
+    0% {
+    transform: translateY(0px);
+    }
+    50% {
+    transform: translateY(-30px);
+    }
+    100% {
+    transform: translateY(0px);
+    }
+}
+
+.header_img .bc .img_11{
+    position: absolute;
+    left: 220px;
+    top: 260px;
+    animation: fuwafuwa 4s infinite;
+}
+
+@keyframes fuwafuwa {
+    0% {
+    transform: translateY(0px);
+    }
+    50% {
+    transform: translateY(-30px);
+    }
+    100% {
+    transform: translateY(0px);
+    }
+}
 
 /*  メッセージ  */
 
@@ -347,7 +414,7 @@ img {
 /* サービス */
 
 .container_service{
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     padding: 0 10px;
 }
 
@@ -437,7 +504,7 @@ img {
 .works_more a{
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 250px;
+    margin-bottom: 200px;
     align-items: center;
 }
 
@@ -449,9 +516,9 @@ img {
 
 .container_profile{
     display: flex;
-    margin-left: calc((100% - 1100px) / 2);
     justify-content: space-between;
-    width: 1100px;
+    margin: 0 auto;
+    max-width: 1100px;
     margin-bottom: 100px;
 }
 
@@ -526,7 +593,7 @@ form{
     width: calc(100% - 10px);
     margin: 0 auto;
     font-size: 15px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
     
 .item{
@@ -567,7 +634,7 @@ textarea{
     border: solid 1px #aaa;
     border-radius: 5px;
     padding: 10px;
-    height: 160px;
+    height: 60px;
     width: 480px;
     font-size: 15px;
 }
@@ -591,7 +658,6 @@ textarea{
 
 .footer img{
     width: 80px;
-    margin-bottom: 10px;
 }
 
 .copy{
@@ -727,7 +793,6 @@ textarea{
 
 .footer img{
     width: 80px;
-    margin-bottom: 30px;
 }
 
 .footer .copy{
@@ -739,7 +804,7 @@ textarea{
     font-style:normal;
 }
 
-/* p3 works01 カフェサイト */
+/* works各ページ 共通 */
 .container_ttl_page h1{
     font-family:"montserrat",sans-serif;
     font-weight:400;
@@ -932,7 +997,7 @@ a.btn_12:hover {
     text-align: center;
     margin-top: 90px;
     background-color: #fff;
-    width: 1100px;
+    max-width: 1100px;
     height: 400px;
     margin: 0 auto;
 }
@@ -1002,7 +1067,7 @@ a.btn_contact:hover {
 .footer .copy{
     text-align: center;
     color: #fff;
-    margin: 50px 0;
+    margin: 20px 0;
     font-family:"montserrat",sans-serif;
     font-weight:100;
     font-style:normal;
