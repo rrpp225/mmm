@@ -13,18 +13,19 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- slickのJavaScript -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body class="top-page">
 <!-- header -->
     <div class="container_header">
         <div class="logo">
-            <img src="image/logo_1.svg" alt="三浦怜華のポートフォリオ"></div>
+            <a href="index.html">
+            <img src="image/logo_1.svg" alt="三浦怜華のポートフォリオ"></a></div>
             <nav class="pc_nav">
                 <ul>
-                    <li><a href="">Works</a></li>
-                    <li><a href="">Profile</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#container_works">Works</a></li>
+                    <li><a href="#Profile">Profile</a></li>
+                    <li><a href="#container_contact">Contact</a></li>
                 </ul>
             </nav>
     </div>
@@ -77,54 +78,54 @@
         </div>
     </section>
 
-    <section class="container_works">
+    <section id="container_works">
         <h1>Works</h1>
-        <h2>- 制作実績 -</h2>
+        <p>- 制作実績 -</p>
         <div class="works_block_slider">
             <div class="works">
-                <a href="">
+                <a href="works_02.html">
                 <img src="image/p1/1_works_01@3x.png" alt="work1">
                 <div class="ttl">WORKERS 様</div>
                 <p class="explain">web</p>
                 </a>
             </div>
             <div class="works">
-                <a href="">
+                <a href="works_03.html">
                 <img src="image/p1/1_works_02@3x-100.jpg" alt="work1">
                 <div class="ttl">LIFE hair design 様</div>
                 <p class="explain">web</p>
                 </a>
             </div>
             <div class="works">
-                <a href="">
+                <a href="works_06.html">
                 <img src="image/p1/1_works_03@3x-100.jpg" alt="work1">
                 <div class="ttl">トラベルメディア 様</div>
                 <p class="explain">Bannar</p>
                 </a>
             </div>
             <div class="works">
-                <a href="">
+                <a href="works_04.html">
                 <img src="image/p1/1_works_04@3x-100.jpg" alt="work1">
                 <div class="ttl">DELUXE BURGER</div>
                 <p class="explain">Bannar</p>
                 </a>
             </div>
             <div class="works">
-                <a href="">
+                <a href="works_04.html">
                 <img src="image/p1/1_works_05@3x-100.jpg" alt="work1">
                 <div class="ttl">DELUXE BURGER</div>
                 <p class="explain">Bannar</p>
                 </a>
             </div>
             <div class="works">
-                <a href="">
+                <a href="works_05.html">
                 <img src="image/p1/1_works_06@3x-100.jpg" alt="work1">
                 <div class="ttl">デザスタ mobile 様</div>
                 <p class="explain">Bannar</p>
                 </a>
             </div>
             <div class="works">
-                <a href="">
+                <a href="works_01.html">
                 <img src="image/p1/1_works_07@3x.png" alt="work1">
                 <div class="ttl">DESIGN CAFE 様</div>
                 <p class="explain">web</p>
@@ -139,8 +140,8 @@
             </div>
         </div>
         <div class="works_more">
-            <a href=""><p>view more</p>
-            <img src="image/p1/アセット 38@3x.png" alt="矢印"></a>
+            <a href="works_all.html"><p>view more</p>
+            <img src="image/p1/viewmore@3x.png" alt="矢印"></a>
         </div>
     </section>
 
@@ -160,11 +161,11 @@
                             <br>自分の好きなところは、負けず嫌いをポジティブな力に変えられるところ。</p>
                     </div>   
             </div>
-            <div class="profile_img"><img src="image/p1/アセット 77@3x.png"></div>
+            <div class="profile_img"><img src="image/p1/profile@3x.png" alt="プロフィール写真"></div>
         </div>
     </section>
 
-    <section class="container_contact">
+    <section id="container_contact">
         <h1>Contact</h1>
         <p>- お問い合わせ -</p>
         <div class="contact_explain">
@@ -175,32 +176,36 @@
             <div class="contact_form">
                 <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScsydVQ-bxOCJYOb2JiC8o97WfJgvmx_TGVeVc1nF5jDAOZow/formResponse" method="post">
                     <div class="item">
-                        <label class="label" for="name">お名前</label>
-                        <input id="your-name" type="text" name="entry.1409889362" placeholder="しょうたろう">
+                        <label id="label" for="name">お名前</label>
+                        <input id="your-name" type="text" name="entry.1409889362" placeholder="">
                     </div>
                         
                     <div class="item">
                         <label class="label" for="">フリガナ</label>
-                        <input id="furigana" type="text" name="entry.887277692" placeholder="ショウタロウ">
+                        <input id="furigana" type="text" name="entry.887277692" placeholder="">
                     </div>
                         
                     <div class="item">
                         <label class="label" for="email">メールアドレス</label>
-                        <input id="your-email" type="email" name="entry.1279063880" placeholder="sample@gmail.com">
+                        <input id="your-email" type="email" name="entry.1279063880" placeholder="">
                     </div>
                         
                     <div class="item">
                         <label class="label" for="textarea-item">お問い合わせ内容</label>
                         <textarea id="textarea-item" class="materialize-textarea" name="entry.425907853"></textarea>
-                    </div>   
-                    <input type="submit" value="送 信" class="input_btn">
+                    </div>  
+                    <div class="input_btn>
+                    <input type="submit" value="送 信">
+                        <span class="side top">Thanks</span>
+    	                <span class="side front">Button</span>
+                    </div>
                 </form>
                 
             </div>
     </section>
 
     <div class="footer">
-        <img src="image/p1/Illust_header.png" alt="自分のイラスト">
+        <img src="image/p1/Illust_header.png" alt="自分のアイコンイラスト">
         <div class="copy">
         &copy;2023 portfolio REIKA MIURA
         </div>
@@ -225,8 +230,17 @@
                 },
                 },
             ],
-        })
-    });
+        });
+    
+        var contact = $('.container_contact').offset().top - 100;
+            $(window).on("scroll", function () {
+                if ($(this).scrollTop() > contact) {
+                    $('.img_1').addClass('active');
+                } else {
+                    $('.img_1').removeClass('active');
+                }
+            });
+        });
     </script>
     
 </body>
