@@ -116,7 +116,6 @@ img {
 .w_inner{
     max-width: 1100px;
     margin: 0 auto;
-    height: calc(100vh - 70px);
     padding: 0 10px;
 }
 
@@ -364,6 +363,7 @@ img {
     justify-content: space-between;
     max-width: 1100px;
     margin: 0 auto;
+    margin-bottom: 200px;
 }
 
 .service{
@@ -420,7 +420,7 @@ img {
 
 #container_works .works .ttl{
     font-size: 20px;
-    margin: 25px 0;
+    margin: 10px 0;
 }
 
 #container_works .works .explain{
@@ -465,8 +465,21 @@ img {
     margin-bottom: 40px;
 }
 
+.container_profile .pc_img{
+    display: none;
+}
+
 .profile_wrap img{
     width: 300px;
+}
+
+.pc_img2{
+    width: 300px;
+}
+
+.profile_explain{
+    display: flex;
+    justify-content: space-between;
 }
 
 .profile_explain h2{
@@ -485,7 +498,7 @@ img {
 .profile_explain p{
     font-size: 14px;
     font-weight: normal;
-    line-height: 20px;
+    line-height: 2;
 }
 
 /* contact */
@@ -521,7 +534,7 @@ img {
 /* contact form */
 
 form{
-    max-width: 680px;
+    max-width: 480px;
     width: calc(100% - 10px);
     margin: 0 auto;
     font-size: 15px;
@@ -571,7 +584,7 @@ textarea{
     border-radius: 5px;
     padding: 10px;
     height: 60px;
-    width: 480px;
+    width: 165px;
     font-size: 15px;
 }
 
@@ -838,13 +851,14 @@ textarea{
     font-size: 25px;
     line-height: 1.2;
     color: #fff;
+    margin-right: 50px;
 }
 
 .outline_text p{
     font-size: 20px;
     line-height: 2.4;
     color: #fff;
-    max-width: 80%;
+    /* max-width: 80%; */
 }
 
 .outline_img img{
@@ -872,6 +886,7 @@ textarea{
     font-size: 25px;
     line-height: 1.2;
     color: #fff;
+    margin-right: 50px;
 }
 
 .design_text p{
@@ -1056,7 +1071,7 @@ a.btn_contact:hover {
 
 .outline img{
     width: 50%;
-    margin-top: 40px;
+    margin: 40px 20px 0 0 ;
 }
 
 .outline_text_other h2{
@@ -1096,49 +1111,68 @@ a.btn_contact:hover {
     color: #fff;
 }
 
-.design_img_other {
+.design_img_other img{
     width: 50%;
     margin-top: 40px;
 }
 
 @media screen and (max-width:1100px){
-    .container_contents{
-        display: block;
-    }    
-}
+    
+
+    /* works 共通 */
+
+    .outline_text h2{
+        font-size: 23px;
+        margin-bottom: 10px;
+        margin-right: 50px;
+    }
+    
+    }
+    
+    .design_text h2{
+        font-size: 23px;
+        margin-bottom: 10px;
+        margin-right: 50px;
+    }
+
 
 
 @media screen and (max-width: 767px){
 
 /* sp トップ */
 
+.header_img .bc{
+    margin-top: 100px;
+}
+
 .header_img .ft{
     display: block;
     position: relative;
     margin-bottom: 200px;
-    width: 20px;
     height: calc(100vh - 70px);
 }
 
 .header_img .ft .img_1{
     position: absolute;
-    width: 300px;
+    width: 50%;
     margin-bottom: 50px;
-    left: -350px;
-    top: 300px;
+    left: 0px;
+    bottom: 30px;
 }
 
 .header_img .ft .img_2{
     position: absolute;
     width: 30px;
-    right: -250px;
-    margin-top: 80px
+    right: 50px;
+    top: 80px;
+    margin-top: 0;
 } 
 
 /* sp サービス */
 
 .container_service h1{
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 .service_wrap{
@@ -1148,7 +1182,7 @@ a.btn_contact:hover {
 
 .service{
     max-width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .service img{
@@ -1156,21 +1190,25 @@ a.btn_contact:hover {
 }
 
 .service .ttl_en{
-    font-size: 30px;
+    font-size: 20px;
+}
+
+.service .ttl_jp{
+    font-size: 12px;
 }
 
 .service .explain{
-    max-width: 50%;
+    max-width: 60%;
     text-align: center;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 12px;
     line-height: 1.5;
 }
 
 /* sp works */
 
 #container_works h1{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 #container_works{
@@ -1182,6 +1220,10 @@ a.btn_contact:hover {
     margin: 0 auto;
 }
 
+.works_more a{
+    margin-bottom: 100px;
+}
+
 /* sp profile */
 
 .container_profile{
@@ -1189,13 +1231,50 @@ a.btn_contact:hover {
 }
 
 .profile_wrap h1{
-    font-size: 3rem;
+    font-size: 2rem;
 }
+
 .container_profile p{
+    margin-bottom: 20px;
+}
+
+.container_profile .pc_img{
     display: block;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.container_profile .pc_img2{
+    display: none;
+}
+
+.profile_explain h2{
+    text-align: center;
+}
+
+.profile_explain h3{
+    text-align: center;
 }
 
 
+/* sp contact */
+
+#container_contact h1{
+    font-size: 2.5rem;
+}
+
+#container_contact p{
+    font-size: 12px;
+}
+
+.label{
+    font-size: 12px;
+}
+
+.textarea{
+    width: 100px;
+}
 
 /* sp works all */
 
@@ -1230,24 +1309,168 @@ a.btn_contact:hover {
 .container_contents{
     display: block;
 }
+
+.text_inner .massage{
+    font-size: 15px;
+}
+
+.text_inner .client{
+    font-size: 35px;
+}
+
+.text_inner .category{
+    font-size: 13px;
+}
+
+.container_contents .inner01{
+    width: 100%;
+}
+
+.container_contents .inner01 dt{
+    width: 30%;
+    font-size: 15px;
+}
+
+.container_contents .inner01 dd{
+    width: 70%;
+    font-size: 15px;
+}
+
+.container_contents .inner02{
+    width: 100%;
+}
+
+.container_contents .inner02 dt{
+    width: 30%;
+    font-size: 15px;
+}
+
+.container_contents .inner02 dd{
+    width: 70%;
+    font-size: 15px;
+}
+
 .outline_img{
     display: block;
 }
+
+.outline_img img{
+    width: 100%;
+}
+
 
 .outline_text{
     display: block;
 }
 
+.outline_text h2{
+    font-size: 23px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+}
+
 .outline_text p{
-max-width: 100%;
+    font-size: 15px;
+    line-height: 3;
 }
 
 .design_text{
     display: block;
 }
 
+.design_text h2{
+    font-size: 23px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+}
+
 .design_text p{
-max-width: 100%;
+    font-size: 15px;
+    line-height: 3;
+}
+
+.contact_wrap h1{
+    font-size: 50px;
+}
+
+.contact_wrap p{
+    font-size: 13px;
+}
+
+/* sp works04 deluxe burger */
+
+.content_img .capcure01_04{
+    width: 35%;
+}
+
+.content_img .capcure02_04{
+    width: 55%;
+}
+
+.outline{
+    display: block;
+    margin-bottom: 50px;
+}
+
+.outline img{
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.outline_text_other h2{
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.outline_text_other p{
+    font-size: 15px;
+}
+
+.design_text_other{
+    display: block;
+    margin: 0;
+}
+
+.design_text_other h2{
+    font-size: 23px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.design_text_other p{
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+.design_img_other2 img{
+    margin: 0 auto;
+    width: 1100px;
+    margin-bottom: 50px;
+}
+
+/* sp works トラベルメディア */
+
+.outline{
+    display: block;
+}
+
+.design_wrap{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.design_img_other img{
+    width: 100%;
+    margin-bottom: 20px;
+} 
+
+.design_text_wrapper h2{
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+.design_text_wrapper p{
+    font-size: 15px;
 }
 
 }
