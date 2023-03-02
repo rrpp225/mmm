@@ -116,7 +116,8 @@ img {
 .w_inner{
     max-width: 1100px;
     margin: 0 auto;
-    
+    height: calc(100vh - 70px);
+    padding: 0 10px;
 }
 
 /* ヘッダー */
@@ -174,13 +175,13 @@ img {
 }
 
 .header_img .bc .img_1{
+    display: inline-block;
     position: absolute;
     top: -40px;
-    animation: fuwafuwa 3s infinite ease-in-out .8s alternate;
-    display: inline-block;
-    transition: 2s ease-in-out;
     height: 70px;
     margin-top: 15px;
+    animation: fuwafuwa 3s infinite ease-in-out .8s alternate;
+    transition: 2s ease-in-out;
 }
 
 @keyframes fuwafuwa {
@@ -195,29 +196,19 @@ img {
     }
 }
 
-.header_img .bc .active{
-    top: -500px;
+.header_img .active .img_1{
+    top: -700px;
 }
 
 .header_img .bc .img_2{
     position: absolute;
+    top: 20px;
     animation: fuwafuwa 4s infinite;
+    transition: 2s ease-in-out;
 }
 
-@keyframes fuwafuwa {
-    0% {
-    transform: translateY(0px);
-    }
-    50% {
-    transform: translateY(-30px);
-    }
-    100% {
-    transform: translateY(0px);
-    }
-}
-
-.header_img .bc .active_2{
-    top: -500px;
+.header_img .active .img_2{
+    top: -900px;
 }
 
 .header_img .bc .img_3{
@@ -225,18 +216,11 @@ img {
     top: -50px;
     right: 50px;
     animation: fuwafuwa 4s infinite;
+    transition: 2s ease-in-out;
 }
 
-@keyframes fuwafuwa {
-    0% {
-    transform: translateY(0px);
-    }
-    50% {
-    transform: translateY(-30px);
-    }
-    100% {
-    transform: translateY(0px);
-    }
+.header_img .active .img_3{
+    top: -800px;
 }
 
 .header_img .bc .img_4{
@@ -244,94 +228,58 @@ img {
     right: 150px;
     top: -80px;
     animation: fuwafuwa 4s infinite;
+    transition: 2s ease-in-out;
 }
 
-@keyframes fuwafuwa {
-    0% {
-    transform: translateY(0px);
-    }
-    50% {
-    transform: translateY(-30px);
-    }
-    100% {
-    transform: translateY(0px);
-    }
+.header_img .active .img_4{
+    top: -700px;
 }
-
 
 .header_img .bc .img_5{
     position: absolute;
+    top: 20px;
     right: 30px;
     animation: fuwafuwa 3s infinite;
+    transition: 3s ease-in-out;
 }
 
-@keyframes fuwafuwa {
-    0% {
-    transform: translateY(0px);
-    }
-    50% {
-    transform: translateY(-30px);
-    }
-    100% {
-    transform: translateY(0px);
-    }
+.header_img .active .img_5{
+    top: -700px;
 }
-
 
 .header_img .bc .img_6{
     position: absolute;
+    top: 20px;
     animation: fuwafuwa 2s infinite;
+    transition: 3s ease-in-out;
 }
 
-@keyframes fuwafuwa {
-    0% {
-    transform: translateY(0px);
-    }
-    50% {
-    transform: translateY(-30px);
-    }
-    100% {
-    transform: translateY(0px);
-    }
+.header_img .active .img_6{
+    top: -700px;
 }
-
 
 .header_img .bc .img_7{
     position: absolute;
+    top: 10px;
     right: 10px;
     animation: fuwafuwa 4s infinite;
+    transition: 3s ease-in-out;
 }
 
-@keyframes fuwafuwa {
-    0% {
-    transform: translateY(0px);
-    }
-    50% {
-    transform: translateY(-30px);
-    }
-    100% {
-    transform: translateY(0px);
-    }
+.header_img .active .img_7{
+    top: -700px;
 }
-
 
 .header_img .bc .img_8{
     position: absolute;
     right: 60px;
     top: 130px;
     animation: fuwafuwa 5s infinite;
+    transition: 3s ease-in-out;
 }
 
-@keyframes fuwafuwa {
-    0% {
-    transform: translateY(0px);
-    }
-    50% {
-    transform: translateY(30px);
-    }
-    100% {
-    transform: translateY(0px);
-    }
+.header_img .active .img_8{
+    top: -700px;
 }
 
 .header_img .bc .img_9{
@@ -339,18 +287,11 @@ img {
     left: 150px;
     top: 250px;
     animation: fuwafuwa 5s infinite;
+    transition: 3s ease-in-out;
 }
 
-@keyframes fuwafuwa {
-    0% {
-    transform: translateY(0px);
-    }
-    50% {
-    transform: translateY(-30px);
-    }
-    100% {
-    transform: translateY(0px);
-    }
+.header_img .active .img_9{
+    top: -700px;
 }
 
 .header_img .bc .img_10{
@@ -358,18 +299,11 @@ img {
     left: 220px;
     top: 150px;
     animation: fuwafuwa 5s infinite;
+    transition: 3s ease-in-out;
 }
 
-@keyframes fuwafuwa {
-    0% {
-    transform: translateY(0px);
-    }
-    50% {
-    transform: translateY(-30px);
-    }
-    100% {
-    transform: translateY(0px);
-    }
+.header_img .active .img_10{
+    top: -700px;
 }
 
 .header_img .bc .img_11{
@@ -377,18 +311,11 @@ img {
     left: 220px;
     top: 260px;
     animation: fuwafuwa 4s infinite;
+    transition: 3s ease-in-out;
 }
 
-@keyframes fuwafuwa {
-    0% {
-    transform: translateY(0px);
-    }
-    50% {
-    transform: translateY(-30px);
-    }
-    100% {
-    transform: translateY(0px);
-    }
+.header_img .active .img_11{
+    top: -700px;
 }
 
 /*  メッセージ  */
@@ -414,7 +341,6 @@ img {
 /* サービス */
 
 .container_service{
-    margin-bottom: 200px;
     padding: 0 10px;
 }
 
@@ -451,7 +377,7 @@ img {
     font-weight: 400;
     font-style: normal;
     font-size: 24px;
-    margin-bottom: 20px;
+    margin: 20px 0;
     }
 
 .service .ttl_jp{
@@ -471,6 +397,7 @@ img {
 #container_works{
     max-width: 1100px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 #container_works h1{
@@ -508,6 +435,10 @@ img {
     align-items: center;
 }
 
+.works_more p{
+    font-size: 19px;
+}
+
 .works_more img{
     width: 50px;
 }
@@ -515,11 +446,10 @@ img {
 /* profile */
 
 .container_profile{
-    display: flex;
-    justify-content: space-between;
     margin: 0 auto;
     max-width: 1100px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
+    padding: 0 10px;
 }
 
 .container_profile h1{
@@ -533,7 +463,10 @@ img {
 
 .container_profile p{
     margin-bottom: 40px;
-    display: flex;
+}
+
+.profile_wrap img{
+    width: 300px;
 }
 
 .profile_explain h2{
@@ -543,20 +476,16 @@ img {
 }
 
 .profile_explain h3{
-    font-size: 13px;
+    font-size: 14px;
     font-weight: normal;
     margin-bottom: 30px;
     line-height: 30px;
 }
 
 .profile_explain p{
-    font-size: 13px;
+    font-size: 14px;
     font-weight: normal;
     line-height: 20px;
-}
-
-.container_profile img{
-    width: 300px;
 }
 
 /* contact */
@@ -576,9 +505,12 @@ img {
 }
 
 #container_contact p{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: #fff;
     font-size: 15px;
+    font-family: "source-han-sans-japanese", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
 
 .contact_explain p{
@@ -594,19 +526,23 @@ form{
     margin: 0 auto;
     font-size: 15px;
     margin-bottom: 50px;
+    font-family: "source-han-sans-japanese", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
     
 .item{
     display: flex;
     align-items: center;
     padding-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     color: #000;
 }
 
 label{
     width: 180px;
     padding-left: 10px;
+    color: #fff;
 }
     
 .label-required{
@@ -639,7 +575,7 @@ textarea{
     font-size: 15px;
 }
 
-/* インプットボタン */
+/* 送信ボタン */
 
 .input_btn{
     margin-top: 30px;
@@ -656,22 +592,17 @@ textarea{
     text-align: center;
 }
 
-.footer img{
-    width: 80px;
-}
-
 .copy{
     text-align: center;
     color: #fff;
-    margin-bottom: 30px;
+    margin: 30px 0;
     font-family:"montserrat",sans-serif;
     font-weight:100;
     font-style:normal;
+    font-size: 12px;
 }
 
-
-
-/* p2 works全体ページ */
+/* p2 works allページ */
 .container_category_list{
     margin-top: 40px;
 }
@@ -716,7 +647,7 @@ textarea{
     border-radius: 2.5rem;
 }
 
-/* works アーカイブ */
+/* p2 works アーカイブ */
 
 .p-works_archive{
     display: flex;
@@ -792,16 +723,7 @@ textarea{
 }
 
 .footer img{
-    width: 80px;
-}
-
-.footer .copy{
-    text-align: center;
-    color: #fff;
-    margin-bottom: 30px;
-    font-family:"montserrat",sans-serif;
-    font-weight:100;
-    font-style:normal;
+    width: 60px;
 }
 
 /* works各ページ 共通 */
@@ -908,8 +830,8 @@ textarea{
 
 .outline_text{
     display: flex;
-    justify-content: space-between;
-    margin: 0 0 80px 150px;
+    justify-content: space-around;
+    margin-bottom: 80px;
 }
 
 .outline_text h2{
@@ -922,6 +844,7 @@ textarea{
     font-size: 20px;
     line-height: 2.4;
     color: #fff;
+    max-width: 80%;
 }
 
 .outline_img img{
@@ -941,8 +864,8 @@ textarea{
 
 .design_text{
     display: flex;
-    justify-content: space-between;
-    margin: 0 0 80px 150px;
+    justify-content: space-around;
+    margin-bottom: 80px;
 }
 
 .design_text h2{
@@ -1064,15 +987,6 @@ a.btn_contact:hover {
 	color: #fff;
 }
 
-.footer .copy{
-    text-align: center;
-    color: #fff;
-    margin: 20px 0;
-    font-family:"montserrat",sans-serif;
-    font-weight:100;
-    font-style:normal;
-}
-
 /* p4 works03 LIFE hair design */
 
 .capcure01_secondary{
@@ -1185,4 +1099,155 @@ a.btn_contact:hover {
 .design_img_other {
     width: 50%;
     margin-top: 40px;
+}
+
+@media screen and (max-width:1100px){
+    .container_contents{
+        display: block;
+    }    
+}
+
+
+@media screen and (max-width: 767px){
+
+/* sp トップ */
+
+.header_img .ft{
+    display: block;
+    position: relative;
+    margin-bottom: 200px;
+    width: 20px;
+    height: calc(100vh - 70px);
+}
+
+.header_img .ft .img_1{
+    position: absolute;
+    width: 300px;
+    margin-bottom: 50px;
+    left: -350px;
+    top: 300px;
+}
+
+.header_img .ft .img_2{
+    position: absolute;
+    width: 30px;
+    right: -250px;
+    margin-top: 80px
+} 
+
+/* sp サービス */
+
+.container_service h1{
+    font-size: 3rem;
+}
+
+.service_wrap{
+    display: block;
+    margin: 0 auto;
+}
+
+.service{
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+
+.service img{
+    width: 200px;
+}
+
+.service .ttl_en{
+    font-size: 30px;
+}
+
+.service .explain{
+    max-width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* sp works */
+
+#container_works h1{
+    font-size: 3rem;
+}
+
+#container_works{
+    padding: 0 20px;
+}
+
+.works_block_slider img{
+    width: 500px;
+    margin: 0 auto;
+}
+
+/* sp profile */
+
+.container_profile{
+    padding: 0 20px;
+}
+
+.profile_wrap h1{
+    font-size: 3rem;
+}
+.container_profile p{
+    display: block;
+}
+
+
+
+/* sp works all */
+
+.p-works_archive{
+    display: block;
+}
+
+.item_bannar{
+    width: 80%;
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+
+.item_web{
+    width: 80%;
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+
+.item_graphic{
+    width: 80%;
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+
+.category_list p{
+    font-size: 15px;
+}
+
+/* sp works各ページ 共通 */
+
+.container_contents{
+    display: block;
+}
+.outline_img{
+    display: block;
+}
+
+.outline_text{
+    display: block;
+}
+
+.outline_text p{
+max-width: 100%;
+}
+
+.design_text{
+    display: block;
+}
+
+.design_text p{
+max-width: 100%;
+}
+
 }

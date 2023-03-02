@@ -24,7 +24,7 @@
             <nav class="pc_nav">
                 <ul>
                     <li><a href="#container_works">Works</a></li>
-                    <li><a href="#Profile">Profile</a></li>
+                    <li><a href="#profile">Profile</a></li>
                     <li><a href="#container_contact">Contact</a></li>
                 </ul>
             </nav>
@@ -146,11 +146,12 @@
         </div>
     </section>
 
-    <section id="Profile">
+    <section id="profile">
         <div class="container_profile">
             <div class="profile_wrap">
-                <h1>Profile</h1>
-                <p>- 自己紹介 -</p>
+                    <h1>Profile</h1>
+                    <p>- 自己紹介 -</p>
+                    <img src="image/p1/profile@3x.png" alt="プロフィール写真">
                     <div class="profile_explain">
                         <h2>三浦怜華</h2>
                         <h3>1992年生まれ、東京都国立市出身。</h3>
@@ -162,7 +163,7 @@
                             <br>自分の好きなところは、負けず嫌いをポジティブな力に変えられるところ。</p>
                     </div>   
             </div>
-            <div class="profile_img"><img src="image/p1/profile@3x.png" alt="プロフィール写真"></div>
+            
         </div>
     </section>
 
@@ -179,11 +180,6 @@
                     <div class="item">
                         <label id="label" for="name">お名前</label>
                         <input id="your-name" type="text" name="entry.1409889362" placeholder="">
-                    </div>
-                        
-                    <div class="item">
-                        <label class="label" for="">フリガナ</label>
-                        <input id="furigana" type="text" name="entry.887277692" placeholder="">
                     </div>
                         
                     <div class="item">
@@ -230,26 +226,15 @@
         });
     
         
-        var contact = $('#container_contact').offset().top - 150;
+        var contact = $('.profile_explain').offset().top - 150;
             $(window).on("scroll", function () {
                 if ($(this).scrollTop() > contact) {
-                    // 白丸1上に上がる
-                    $('.img_1').addClass('active');
+                    // 白丸上に上がる
+                    $('.bc').addClass('active');
                 } else {
-                    $('.img_1').removeClass('active');
+                    $('.bc').removeClass('active');
                 }
             });
-
-            var contact = $('#container_contact').offset().top - 150;
-            $(window).on("scroll", function () {
-                if ($(this).scrollTop() > contact) {
-                    // 白丸2上に上がる
-                    $('.img_2').addClass('active_2');
-                } else {
-                    $('.img_2').removeClass('active_2');
-                }
-            });
-
         });
     </script>
     
