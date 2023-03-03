@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>miura portfolio</title>
+    <title>REIKA MIURA | 三浦 怜華</title>
     <link rel="stylesheet" href="https://use.typekit.net/yuf4dcq.css">
+    <!-- slickのCSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- slickのJavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
-<body>
-<div>
-<div class="works04-page">
+<body class="works04-page">
 <!-- header -->
     <div class="container_header">
         <div class="logo">
@@ -18,9 +23,17 @@
                 <img src="image/logo_1.svg" alt="三浦怜華のポートフォリオ"></a></div>
                 <nav class="pc_nav">
                     <ul>
-                        <li><a href="">Works</a></li>
-                        <li><a href="">Profile</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="index.html#container_works">Works</a></li>
+                        <li><a href="index.html#profile">Profile</a></li>
+                        <li><a href="index.html#container_contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="sp_btn"><span></span></div>
+                <nav class="sp_nav">
+                    <ul>
+                        <li><a href="index.html#container_works">Works</a></li>
+                        <li><a href="index.html#profile">Profile</a></li>
+                        <li><a href="index.html#container_contact">Contact</a></li>
                     </ul>
                 </nav>
         </div>
@@ -45,7 +58,7 @@
             </div>
         </div>
     </section>
-    </div>
+    
 
 
 <section class="container_contents">
@@ -74,6 +87,7 @@
                 instagramとtwitterの両方で検証を行うので、
                 正方形と長方形の2つのサイズを制作しました。</p>
         </div>
+    </div>
     
 
     <div class="design_wrap_2">
@@ -86,12 +100,12 @@
                 パクトを与えるため、背景に大きく文字を薄く忍ばせ、躍動感を出すためにゴマが散り
                 ばめられたようなデザインにしました。</p>
         </div>
+        </div>
     </div>
-</div>
-</div>
 </section>
 
     <a href="works_all.html" class="back_btn">back</a>
+</div>
 
     <div class="contact_wrap">
         <div class="box">
@@ -99,7 +113,7 @@
                 <h2>- お問い合わせ -</h2>
                 <p>制作のご依頼やご質問など、まずは気軽にご相談ください。<br>
                 3営業日以内にご連絡をさせていただきます。</p>
-                <a href="" class="btn_contact"><span>お問い合わせ</span></a>
+                <a href="index.html#container_contact" class="btn_contact"><span>お問い合わせ</span></a>
         </div>
     </div>
 
@@ -107,8 +121,17 @@
         <div class="copy">
         &copy;2023 portfolio REIKA MIURA
         </div>
-    </div>  
-</div>
-</div>
+    </div> 
+
+    <script>
+        $(function (){
+            // ハンバーガー
+            $('.sp_btn').on('click',function(){
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open');
+            })
+        });
+    </script>
+
 </body>
 </html>

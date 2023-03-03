@@ -87,6 +87,24 @@ dd {
 
 }
 
+.thanks-page{
+    background: linear-gradient(90deg,#115588,#158bba,#bfe9f7);
+    background-size: 180% 180%;
+    animation: gradient-animation 10s ease infinite;
+    }
+    
+    @keyframes gradient-animation {
+        0% {
+        background-position: 0% 50%;
+        }
+        50% {
+        background-position: 100% 50%;
+        }
+        100% {
+        background-position: 0% 50%;
+        }
+    }
+
 
 a {
     /*下線を消す*/
@@ -110,6 +128,11 @@ img {
     border: none;
     max-width: 100%;
 }    
+
+html{
+    /* スムーススクロール */
+    scroll-behavior: smooth;
+}
 
 /* ここからスタート */
 
@@ -155,6 +178,14 @@ img {
     font-weight: 100;
     font-style: normal;
     padding: 0 30px;
+}
+
+.sp_nav{
+    display: none;
+}
+
+.sp_btn {
+    display: none;
 }
 
 /* 白丸背景 */
@@ -436,7 +467,10 @@ img {
 }
 
 .works_more p{
-    font-size: 19px;
+    font-size: 13px;
+    font-family:"montserrat",sans-serif;
+    font-weight:400;
+    font-style:normal;
 }
 
 .works_more img{
@@ -484,8 +518,10 @@ img {
 
 .profile_explain h2{
     font-size: 25px;
-    font-weight: normal;
-    margin-bottom: 10px;
+    margin-bottom: 10px;  
+    font-family:"montserrat",sans-serif;
+    font-weight:400;
+    font-style:normal;
 }
 
 .profile_explain h3{
@@ -885,8 +921,8 @@ textarea{
 .design_text h2{
     font-size: 25px;
     line-height: 1.2;
-    color: #fff;
     margin-right: 50px;
+    color: #fff;
 }
 
 .design_text p{
@@ -1016,6 +1052,7 @@ a.btn_contact:hover {
     margin-bottom: 80px;
 }
 
+
 /* p5 works04 deluxe burger */
 
 .content_img .capcure01_04{
@@ -1029,7 +1066,7 @@ a.btn_contact:hover {
 .design_text_other{
     display: flex;
     justify-content: space-between;
-    margin: 0 0 80px 150px;
+    margin: 0 0 80px 0;
 }
 
 .design_text_other h2{
@@ -1037,6 +1074,7 @@ a.btn_contact:hover {
     line-height: 1.2;
     color: #fff;
     margin-bottom: 40px;
+    margin-right: 50px;
 }
 
 .design_text_other p{
@@ -1098,6 +1136,10 @@ a.btn_contact:hover {
     padding: 0 10px;
 }
 
+.design_text_wrapper{
+    width: 50%;
+}
+
 .design_text_wrapper h2{
     font-size: 25px;
     line-height: 1.2;
@@ -1111,13 +1153,117 @@ a.btn_contact:hover {
     color: #fff;
 }
 
-.design_img_other img{
+.design_img_other {
     width: 50%;
     margin-top: 40px;
 }
 
+/* thanksページ */
+
+.thanks_wrap{
+    padding: 200px 10px 200px;
+}
+
+.thanks_wrap h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    font-family:"montserrat",sans-serif;
+    font-weight:700;
+    font-style:normal;
+    margin-bottom: 100px;
+}
+
+.thanks_wrap p{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 2;
+}
+
+
 @media screen and (max-width:1100px){
     
+    /* ヘッター */
+
+    .pc_nav{
+        display: none;
+    }
+    .sp_btn{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        height: 33px;
+        z-index: 999;
+    }
+    .sp_btn span{
+        background: #fff;
+        width: 33px;
+        height: 3px;
+        display: block;
+        position: relative;
+        top: 10px;
+        transition: 0.5s;
+    }
+    .sp_btn span::before,.sp_btn span::after{
+        content: '';
+        background: #fff;
+        width: 33px;
+        height: 3px;
+        display: block;
+        position: absolute;
+        transition: 0.5s;
+    }
+
+    .sp_btn span::before{
+        bottom: 10px;
+    }
+
+    .sp_btn span::after{
+        top: 10px;
+    }
+
+    .open span{
+        background: transparent;
+    }
+
+    .open span::before{
+        bottom: 0px;
+        transform: rotate(45deg);
+    }
+
+    .open span::after{
+        top: 0px;
+        transform: rotate(135deg);
+    }
+
+    .sp_nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(43, 46, 49, 0.8);
+    }
+
+    .sp_nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .sp_nav ul li{
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+        padding: 15px 0;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    }
+
 
     /* works 共通 */
 
@@ -1301,7 +1447,7 @@ a.btn_contact:hover {
 }
 
 .category_list p{
-    font-size: 15px;
+    font-size: 10px;
 }
 
 /* sp works各ページ 共通 */
@@ -1358,7 +1504,6 @@ a.btn_contact:hover {
     width: 100%;
 }
 
-
 .outline_text{
     display: block;
 }
@@ -1387,6 +1532,14 @@ a.btn_contact:hover {
 .design_text p{
     font-size: 15px;
     line-height: 3;
+}
+
+.design_text_wrapper{
+    width: 100%;
+}
+
+.design_img_other{
+    width: 100%;
 }
 
 .contact_wrap h1{
@@ -1434,7 +1587,6 @@ a.btn_contact:hover {
 
 .design_text_other h2{
     font-size: 23px;
-    color: #fff;
     margin-bottom: 20px;
 }
 
@@ -1443,9 +1595,10 @@ a.btn_contact:hover {
     margin-bottom: 50px;
 }
 
-.design_img_other2 img{
+.design_img_other img{
+    width: 100%;
     margin: 0 auto;
-    width: 1100px;
+    /* width: 1100px; */
     margin-bottom: 50px;
 }
 
@@ -1471,6 +1624,29 @@ a.btn_contact:hover {
 }
 .design_text_wrapper p{
     font-size: 15px;
+}
+
+/* thanksページ */
+
+.thanks_wrap{
+    padding: 80px 10px 80px;
+}
+
+.thanks_wrap h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    font-family:"montserrat",sans-serif;
+    font-weight:700;
+    font-style:normal;
+    margin-bottom: 100px;
+}
+
+.thanks_wrap p{
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    line-height: 2;
 }
 
 }

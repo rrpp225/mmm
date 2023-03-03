@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>miura portfolio</title>
+    <title>REIKA MIURA | 三浦 怜華</title>
     <link rel="stylesheet" href="https://use.typekit.net/yuf4dcq.css">
     <!-- slickのCSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
@@ -17,6 +17,7 @@
 </head>
 <body class="top-page">
 <!-- header -->
+<section id="header">
     <div class="container_header">
         <div class="logo">
             <a href="index.html">
@@ -28,7 +29,17 @@
                     <li><a href="#container_contact">Contact</a></li>
                 </ul>
             </nav>
+
+            <div class="sp_btn"><span></span></div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="#container_works">Works</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#container_contact">Contact</a></li>
+                </ul>
+            </nav>
     </div>
+</section>
 
     <div class="header_img">
         <div class="header_img bc">
@@ -85,42 +96,42 @@
         <div class="works_block_slider">
             <div class="works">
                 <a href="works_02.html">
-                <img src="image/p1/1_works_01@3x.png" alt="work1">
+                <img src="image/p1/1_works_01@3x.png" alt="work2">
                 <div class="ttl">WORKERS 様</div>
                 <p class="explain">web</p>
                 </a>
             </div>
             <div class="works">
                 <a href="works_03.html">
-                <img src="image/p1/1_works_02@3x-100.jpg" alt="work1">
+                <img src="image/p1/1_works_02@3x-100.jpg" alt="work3">
                 <div class="ttl">LIFE hair design 様</div>
                 <p class="explain">web</p>
                 </a>
             </div>
             <div class="works">
                 <a href="works_06.html">
-                <img src="image/p1/1_works_03@3x-100.jpg" alt="work1">
+                <img src="image/p1/1_works_03@3x-100.jpg" alt="work6">
                 <div class="ttl">トラベルメディア 様</div>
                 <p class="explain">Bannar</p>
                 </a>
             </div>
             <div class="works">
                 <a href="works_04.html">
-                <img src="image/p1/1_works_04@3x-100.jpg" alt="work1">
+                <img src="image/p1/1_works_04@3x-100.jpg" alt="work4">
                 <div class="ttl">DELUXE BURGER</div>
                 <p class="explain">Bannar</p>
                 </a>
             </div>
             <div class="works">
                 <a href="works_04.html">
-                <img src="image/p1/1_works_05@3x-100.jpg" alt="work1">
+                <img src="image/p1/1_works_05@3x-100.jpg" alt="work4">
                 <div class="ttl">DELUXE BURGER</div>
                 <p class="explain">Bannar</p>
                 </a>
             </div>
             <div class="works">
                 <a href="works_05.html">
-                <img src="image/p1/1_works_06@3x-100.jpg" alt="work1">
+                <img src="image/p1/1_works_06@3x-100.jpg" alt="work5">
                 <div class="ttl">デザスタ mobile 様</div>
                 <p class="explain">Bannar</p>
                 </a>
@@ -133,8 +144,8 @@
                 </a>
             </div>
             <div class="works">
-                <a href="">
-                <img src="image/p1/1_works_07@3x.png" alt="work1">
+                <a href="works_07.html">
+                <img src="image/p1/1_works_07@3x.png" alt="work7">
                 <div class="ttl">ポートフォリオサイト</div>
                 <p class="explain">web</p>
                 </a>
@@ -181,7 +192,11 @@
                 3営業日以内にご連絡をさせていただきます。</p>
         </div>
             <div class="contact_form">
-                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScsydVQ-bxOCJYOb2JiC8o97WfJgvmx_TGVeVc1nF5jDAOZow/formResponse" method="post">
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScsydVQ-bxOCJYOb2JiC8o97WfJgvmx_TGVeVc1nF5jDAOZow/formResponse" 
+                method="post"
+                target="hidden_iframe"
+                onsubmit="submitted=true;">
+            
                     <div class="item">
                         <label id="label" for="name">お名前</label>
                         <input id="your-name" type="text" name="entry.1409889362" placeholder="">
@@ -203,17 +218,22 @@
     </section>
 
     <div class="footer">
-        <img src="image/p1/Illust_header.png" alt="自分のアイコンイラスト">
+        <a href="#header">
+            <img src="image/p1/Illust_header.png" alt="自分のアイコンイラスト">
+        </a>
         <div class="copy">
-        &copy;2023 portfolio REIKA MIURA
+            &copy;2023 portfolio REIKA MIURA
         </div>
     </div>
 
-
-
-
     <script>
         $(function(){
+            // ハンバーガー
+        $('.sp_btn').on('click',function(){
+            $('.sp_nav').fadeToggle();
+            $('.sp_btn').toggleClass('open');
+        })
+
             // ワークススライダー
         $('.works_block_slider').slick({
             arrows: false,
@@ -229,7 +249,6 @@
                 },
             ],
         });
-    
         
         var contact = $('.profile_explain').offset().top - 150;
             $(window).on("scroll", function () {
@@ -241,6 +260,15 @@
                 }
             });
         });
+
+        var submitted = false;
+        
+    <iframe
+        name="hidden_iframe"
+        id="hidden_iframe"
+        style="display: none"
+        onload="if(submitted)  {window.location='thanks.html';}"
+    ></iframe>
     </script>
     
 </body>
