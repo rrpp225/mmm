@@ -250,7 +250,7 @@
             ],
         });
         
-        var contact = $('.profile_explain').offset().top - 150;
+        var contact = $('.profile_explain').offset().top - 100;
             $(window).on("scroll", function () {
                 if ($(this).scrollTop() > contact) {
                     // 白丸上に上がる
@@ -262,14 +262,15 @@
         });
 
         var submitted = false;
+
         
-    <iframe
-        name="hidden_iframe"
-        id="hidden_iframe"
-        style="display: none"
-        onload="if(submitted)  {window.location='thanks.html';}"
-    ></iframe>
     </script>
+
+<iframe name="hidden_iframe"
+id="hidden_iframe"
+style="display: none"
+onload="if(submitted)  {window.location='thanks.html';}"
+></iframe>
     
 </body>
 </html>
