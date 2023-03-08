@@ -379,6 +379,7 @@ body {
     width: 60px;
     height: 72px;
     position: absolute;
+    top: 85%;
     left: 50%;
     margin-left: -30px;
     bottom: 20px;
@@ -1468,10 +1469,6 @@ a.btn_contact:hover {
 }
 
 #container_contact p{
-    font-size: 12px;
-}
-
-.label{
     font-size: 12px;
 }
 
