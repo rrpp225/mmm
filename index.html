@@ -24,7 +24,7 @@
             <img src="image/logo_1.svg" alt="三浦怜華のポートフォリオ"></a></div>
             <nav class="pc_nav">
                 <ul>
-                    <li><a href="#container_works">Works</a></li>
+                    <li><a href="works_all.html">Works</a></li>
                     <li><a href="#profile">Profile</a></li>
                     <li><a href="#container_contact">Contact</a></li>
                 </ul>
@@ -33,7 +33,7 @@
             <div class="sp_btn"><span></span></div>
             <nav class="sp_nav">
                 <ul>
-                    <li><a href="#container_works">Works</a></li>
+                    <li><a href="works_all.html">Works</a></li>
                     <li><a href="#profile">Profile</a></li>
                     <li><a href="#container_contact">Contact</a></li>
                 </ul>
@@ -235,7 +235,7 @@
     <script>
         $(function(){
             // ハンバーガー
-        $('.sp_btn').on('click',function(){
+        $('.sp_btn,.sp_nav li').on('click',function(){
             $('.sp_nav').fadeToggle();
             $('.sp_btn').toggleClass('open');
         })
